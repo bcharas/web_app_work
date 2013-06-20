@@ -1,0 +1,12 @@
+$rating_width: 130px;
+$rating_height: 100px;
+$rating_txt_color: #8FA0F1;
+
+.match_rating{
+	@include box($rating_height, $rating_width, 
+					white, $rating_txt_color);
+	z-index: 5;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline;
+}

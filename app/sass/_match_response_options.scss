@@ -1,0 +1,32 @@
+.options{
+	z-index: 1;
+	/*/display: block;*/
+
+	position: relative;
+	top: -10px;
+	
+	font:{
+		family: "Arial", Times, sans-serif;
+		size: 20px;
+	}
+	
+	width: 600px;
+	height: 110px;
+	display: table;
+
+}
+
+.yes_option{
+	@include box(110px, 50%, white, black);
+
+	//display: inline-block;
+
+	@include background-image(linear-gradient(color-stops(#F2F2F2, #E8E8E8)));
+}
+
+.no_option{
+	@include box(110px, 50%, white, black);
+	//display: inline-block;
+
+	@include background-image(linear-gradient(color-stops(#F2F2F2, #E8E8E8)));
+}

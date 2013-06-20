@@ -1,0 +1,19 @@
+@mixin box($height, $width, $background_color, $txt_color){
+	height: $height;
+	width: $width;
+	
+	color: $txt_color;
+	
+	text-align: center;
+	
+	background:{
+		color: $background_color;
+	}
+	
+	border:{
+		style: solid;
+		width: 1px;
+		radius: 5px;
+		color: $border_color;
+	}
+}
