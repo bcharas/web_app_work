@@ -11,11 +11,12 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
 //'myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers'
 var myApp = angular.module('myApp',['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']);
 
-myApp.config(function($routeProvider, $httpProvider){
-    $routeProvider.when('/matches', {templateUrl: 'partials/matches.html', controller: 'MatchListCtrl'});
+myApp.config(function($routeProvider){
+    $routeProvider.when('/matches', {templateUrl: 'partials/new_matches.html', controller: 'MatchListCtrl'});
     $routeProvider.when('/splash', {templateUrl: 'partials/splash.html', controller: 'MyCtrl2'});
+    //$routeProvider.when('/foo', {redirectTo: "http://google.com"});
     $routeProvider.otherwise({redirectTo: '/splash'});	
-    delete $httpProvider.defaults.headers.common['X-Requested-With'];
+    //delete $httpProvider.defaults.headers.common['X-Requested-With'];
     // //delete $httpProvider.defaults.headers.common['Origin'];
 });
 

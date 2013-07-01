@@ -5,71 +5,19 @@
 var server_data = {"home_feed":[{"compatibility_score":null,"status":0,"id":11,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":4,"fb_user_id":4811548.0,"first_name":"David","last_name":"Andrews","fb_photo_url_large":"https://graph.facebook.com/4811548/picture?type=large"},"user2":{"id":17,"fb_user_id":507945584.0,"first_name":"Juliet","last_name":"Guynn","fb_photo_url_large":"https://graph.facebook.com/507945584/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":12,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":15,"fb_user_id":506946059.0,"first_name":"Emily","last_name":"Hornblower","fb_photo_url_large":"https://graph.facebook.com/506946059/picture?type=large"},"user2":{"id":26,"fb_user_id":520750744.0,"first_name":"David","last_name":"Chough","fb_photo_url_large":"https://graph.facebook.com/520750744/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":13,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":142,"fb_user_id":623169602.0,"first_name":"Marina","last_name":"Dock","fb_photo_url_large":"https://graph.facebook.com/623169602/picture?type=large"},"user2":{"id":448,"fb_user_id":1319869017.0,"first_name":"Charlie","last_name":"Dorf","fb_photo_url_large":"https://graph.facebook.com/1319869017/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":14,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":218,"fb_user_id":679014108.0,"first_name":"Pat","last_name":"Daly","fb_photo_url_large":"https://graph.facebook.com/679014108/picture?type=large"},"user2":{"id":430,"fb_user_id":1245680203.0,"first_name":"Cassie","last_name":"Christopher","fb_photo_url_large":"https://graph.facebook.com/1245680203/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":15,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":413,"fb_user_id":1181978000.0,"first_name":"Paul","last_name":"Yang","fb_photo_url_large":"https://graph.facebook.com/1181978000/picture?type=large"},"user2":{"id":432,"fb_user_id":1249463652.0,"first_name":"Sara","last_name":"Gessinger","fb_photo_url_large":"https://graph.facebook.com/1249463652/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":16,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":484,"fb_user_id":1381110340.0,"first_name":"Darren","last_name":"Lane","fb_photo_url_large":"https://graph.facebook.com/1381110340/picture?type=large"},"user2":{"id":560,"fb_user_id":1656364605.0,"first_name":"Riddhima","last_name":"Agarwal","fb_photo_url_large":"https://graph.facebook.com/1656364605/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":17,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":92,"fb_user_id":586447522.0,"first_name":"William","last_name":"Ross","fb_photo_url_large":"https://graph.facebook.com/586447522/picture?type=large"},"user2":{"id":140,"fb_user_id":621120277.0,"first_name":"Christina","last_name":"Loop","fb_photo_url_large":"https://graph.facebook.com/621120277/picture?type=large"},"questions":[{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}},{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}}]},{"compatibility_score":null,"status":0,"id":18,"type":"friend","current_user":{"id":1,"fb_user_id":582579022.0,"first_name":"Ben","last_name":"Charas","fb_photo_url_large":"https://graph.facebook.com/582579022/picture?type=large"},"user1":{"id":597,"fb_user_id":100000146194059.0,"first_name":"Kalan","last_name":"Lysenko","fb_photo_url_large":"https://graph.facebook.com/100000146194059/picture?type=large"},"user2":{"id":642,"fb_user_id":100001519080385.0,"first_name":"Annie","last_name":"Ludtke","fb_photo_url_large":"https://graph.facebook.com/100001519080385/picture?type=large"},"questions":[{"question":{"id":14,"question_text":"Location"}},{"question":{"id":20,"question_text":"Don't know them"}},{"question":{"id":1,"question_text":"In a relationship"}},{"question":{"id":4,"question_text":"Plays for the other team"}}]}]};
 
 var data_feed = server_data["home_feed"];
-//console.log(data_feed);
-/*
-var match;
-var user;
-for (var match_num = 0; match_num < data_feed.length; match_num++){
-	//console.log("\nmatch number " + match_num + ":");
-	match = data_feed[match_num];
-	//console.log(match);
-	var user1 = match["user1"];
-	//console.log("users");
-	//console.log(user1);
-	
-	var user2 = match["user2"];
-	//console.log(user2);
-	/*
-	console.log(match);
-	for (var user_num = 0; user_num < 1; user_num++){
-		user = match[user_num];
-		console.log(user);
-	}
-	
-}
-*/
-
 
 /* Controllers */
 function MatchListCtrl($scope, $http) {
-  /*
-  $scope.phones = [
-    {"name_1": "A",
-     "name_2": "B"},
-    {"name_1": "C",
-     "name_2": "D"},
-    {"name_1": "E",
-     "name_2": "F"}
-  ];
-  */
-	//$scope.matches = data_feed;
+
 	for (var match_num = 0; match_num < data_feed.length; match_num++){
+		
 		var this_match = data_feed[match_num];
 		this_match.user1.fb_photo_url_large += "&width=600";
 		this_match.user2.fb_photo_url_large += "&width=600";
+		console.log("generated listing: " + match_num);
 	}
 	$scope.matches = data_feed;
 
-  //console.log("kentucky");
-  /*
-  var huzzah_url = "http://twodegrees-dev.herokuapp.com/api/home?hz_access_token=28ad2aa67be91fb09ecf5b6829971c70&items_per_page=10&min_rank=1";       
-  //console.log($httpProvider.defaults.headers);
-  console.log("sending request");
-  $http({withCredentials: true, method: "GET", url: huzzah_url}).success(function (data){
-  	
-  	//$scope.data = data;
-  	//console.log("trace1");
-  	//console.log(typeof(data));
-  	//console.log(data());
-  	window.foo = data;
-  	//console.log("done");
-  }).error(function(data){
-  	console.log("error");
-  	typeof(data);
-  	//console.log(data);
-  });
-  console.log("request sent");  
-  */
 }
 
 angular.module('myApp.controllers', []).

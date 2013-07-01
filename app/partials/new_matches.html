@@ -2,6 +2,7 @@
   <head>
     <link href='stylesheets/match_styles.css' rel='stylesheet' type='text/css'>
     <script src='../lib/angular/angular.js'></script>
+    <script src='js/data.js'></script>
     <script src='js/controllers.js'></script>
   </head>
   <body ng-controller='MatchListCtrl'>
@@ -10,8 +11,8 @@
     </div>
     <div class='match_page'>
       <ul>
-        <li class='listing' ng-repeat='match in matches'>
-          <div class='ng-view'></div>
+        <li ng-repeat='match in matches'>
+          <div class='listing' ng-include="'partials/match_friends.html'"></div>
         </li>
         <!-- /LISTING PARTIALS -->
       </ul>
