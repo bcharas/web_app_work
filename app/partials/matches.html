@@ -3,27 +3,28 @@
   <head>
 
     <link href='stylesheets/match_styles.css' rel='stylesheet' type='text/css'>
-	<script src="lib/angular/angular.js"></script>
+	<script src="../lib/angular/angular.js"></script>
 	<src="js/controllers.js"></script>
   </head>
   
-  <body ng-controller="PhoneListCtrl">
+  <body ng-controller="MatchListCtrl">
 	<div class='header'>
 		<div id="header_logo"></div>
 	</div>
 	<div class='match_page'>
 		<ul>
-			<li class='listing'  ng-repeat="phone in phones">
+			<li class='listing'  ng-repeat="match in matches">
 
 			  <div class='match_label'>
 			    Match
-			    <b>{{phone.name_1}}</b>
+			    <b>{{match.user1.first_name}} {{match.user1.last_name}}</b>
 			    and
-			    <b>{{phone.name_2}}</b>
+			    <b>{{match.user2.first_name}} {{match.user2.last_name}}</b>
 			  </div>
 			  <div class='profiles_box'>
-			    <div id='pro_pic_1'></div>
-			    <div id='pro_pic_2'></div>
+
+			    <div id='pro_pic_1' style="background-image: url({{match.user1.fb_photo_url_large}} )"></div>
+			    <div id='pro_pic_2' style="background-image: url({{match.user2.fb_photo_url_large}})"></div>
 			  </div>
 			  <!--<div class='match_rating'>100%</div>-->
 			  <table cellpadding='0' cellspacing='0' class='options' height='110px' width='600px'>

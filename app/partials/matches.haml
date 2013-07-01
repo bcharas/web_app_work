@@ -1,0 +1,15 @@
+%html{:lang => "en"}
+	%head
+		%link{:href=> 'stylesheets/match_styles.css', :rel=>'stylesheet', :type=>'text/css'}
+		%script{:src=>"../lib/angular/angular.js"}
+		%script{:src=>"js/controllers.js"}
+	
+	%body{"ng-controller"=> "MatchListCtrl"}
+		.header
+			#header_logo
+		.match_page
+			%ul
+				%li.listing{"ng-repeat"=> "match in matches"}
+					.ng-view
+				//LISTING PARTIALS
+		

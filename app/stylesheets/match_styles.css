@@ -108,7 +108,9 @@ ul {
   border-radius: 5px;
   border-color: #dee0e1;
   background-repeat: no-repeat;
-  background-image: url("../img/square-placeholder.jpg");
+  /*background-image: url("../img/square-placeholder.jpg");*/
+  background-position: center center;
+  background-size: cover;
   display: inline-block;
 }
 
@@ -124,7 +126,9 @@ ul {
   border-radius: 5px;
   border-color: #dee0e1;
   background-repeat: no-repeat;
-  background-image: url("../img/square-placeholder.jpg");
+  /*background-image: url("../img/square-placeholder.jpg");*/
+  background-position: center center;
+  background-size: cover;
   margin-top: 10px;
   display: inline-block;
 }

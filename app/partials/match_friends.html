@@ -1,0 +1,18 @@
+<div class='match_label'>
+  Match
+  <b>
+    {{match.user1.first_name}} {{match.user1.last_name}}
+  </b>
+  and
+  <b>
+    {{match.user2.first_name}} {{match.user2.last_name}}
+  </b>
+</div>
+<div class='profiles_box'>
+  <div id='pro_pic_1' style='background-image: url({{match.user1.fb_photo_url_large}} )'></div>
+  <div id='pro_pic_2' style='background-image: url({{match.user2.fb_photo_url_large}} )'></div>
+</div>
+<table cellpadding='0' cellspacing='0' class='options' height='110px' width='600px'>
+  <td class='yes_option'>Yes</td>
+  <td class='no_option'>No</td>
+</table>
