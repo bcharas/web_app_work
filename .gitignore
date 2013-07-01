@@ -1,3 +1,7 @@
+<<<<<<< HEAD
 *.class
 *.pyc
 *.pyo
+=======
+.env
+>>>>>>> c61cb28544263699fd3e9df68be952bbd1203fbd
