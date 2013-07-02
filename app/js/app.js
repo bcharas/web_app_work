@@ -12,6 +12,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
 var myApp = angular.module('myApp',['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']);
 
 myApp.config(function($routeProvider){
+    $routeProvider.when('/', {redirectTo: '/splash'});
     $routeProvider.when('/matches', {templateUrl: 'partials/new_matches.html', controller: 'MatchListCtrl'});
     $routeProvider.when('/splash', {templateUrl: 'partials/splash.html', controller: 'MyCtrl2'});
     //$routeProvider.when('/foo', {redirectTo: "http://google.com"});

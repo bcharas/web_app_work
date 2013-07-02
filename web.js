@@ -18,14 +18,19 @@ var app = express.createServer(
 );
 
 // listen to the PORT given to us in the environment
-var port = process.env.PORT || 3000;
-
+//var port = process.env.PORT || 5678;
+var port = 5678;
+//console.log("MY ID: " + process.env.FACEBOOK_APP_ID);
 app.listen(port, function() {
   console.log("Listening on " + port);
 });
 
+//console.log("foo");
+
 app.dynamicHelpers({
+
   'host': function(req, res) {
+  	console.log("trace1");
     return req.headers['host'];
   },
   'scheme': function(req, res) {
@@ -44,6 +49,7 @@ app.dynamicHelpers({
 });
 
 function render_page(req, res) {
+	console.log("beginning render..");
   req.facebook.app(function(err, app) {
     req.facebook.me(function(user) {
       res.render('index.ejs', {
@@ -59,8 +65,9 @@ function render_page(req, res) {
 function handle_facebook_request(req, res) {
 
   // if the user is logged in
-  if (req.facebook.token) {
 
+  if (req.facebook.token) {
+	//console.log("trace1");
     async.parallel([
       function(cb) {
         // query 4 friends and send them to the socket for this socket id
@@ -95,9 +102,16 @@ function handle_facebook_request(req, res) {
     });
 
   } else {
+
     render_page(req, res);
   }
 }
 
-app.get('/', handle_facebook_request);
+//app.get('/', handle_facebook_request);
+app.get('/', function(req, req){
+	res.send('hello world');
+});
+
 app.post('/', handle_facebook_request);
+
+//app.get('/foo', handle_facebook_request);
