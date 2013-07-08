@@ -1,0 +1,52 @@
+@import 'base'
+
+html, body, .view_box, .splash_page
+  +fit_size
+
+.splash_page
+  $splash_background: 'SplashBackground@2x.png'
+  
+  +fitted_background_img(asset($splash_background))
+  text-align: center
+  
+$logo_width: 402px
+$logo_height: 93px
+
+.splash_logo  
+  width: $logo_width  
+  height: $logo_height
+  $logo_img: 'SplashLogo@2x.png'
+  +fitted_background_img(asset($logo_img))
+  +center($logo_height, $logo_width)
+  
+$login_width: 481px
+$login_height: 87px  
+a  
+  width: $login_width
+  height: $login_height
+
+$login_position: 50% 
+.fb_login
+  $login_img: 'SplashLoginButton@2x.png'
+  
+  width: $login_width
+  height: $login_height
+  +fitted_background_img(asset($login_img))  
+  +center_x($login_width)
+  //+inline-block
+  $login_position: -webkit-calc(50% - (#{$login_height}/2) + 1.5*#{$logo_height})
+  top: $login-position
+  $foo: 5
+  //top: +calc(50% + $logo_height)
+  
+$font_size: 20px
+.no_fb
+  color: white
+  font:
+    family: "Tahoma", sans-serif
+    size: $font_size
+  text-align: center
+  position: relative
+  top: -webkit-calc(50% - (#{$login_height}/2) + 1.5*#{$logo_height} + #{$login_height} + .5*#{$font_size})
+  //margin-top: 15px   #{$login_height} + .5*#{$font_size}
+  //top: -webkit-calc(#{$login_position} + 10px)

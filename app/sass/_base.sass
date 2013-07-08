@@ -1,0 +1,60 @@
+@import 'compass'
+
++global-reset
+
+//$path_to_assets: '../assets/'
+$path_to_assets: '../img/'
+
+@function asset($filename)
+  @return $path_to_assets + $filename    
+
+@mixin fit_size
+  margin: 0
+  padding: 0
+  width: 100%
+  height: 100%
+  
+@mixin fitted_background_img($filename)
+  background:
+    //image: url(asset($filename))
+    image: url($filename)
+    repeat: no-repeat
+    //position: center fixed
+    size: 100% 100%
+
+@mixin position($dx, $dy)
+  position: absolute
+  left: $dx
+  top: $dy  
+  
+@mixin center_x($width)
+  position: absolute
+  left: 50%
+  margin-left: -($width / 2)
+  
+@mixin center_y($height)
+  position: absolute
+  top: 50%
+  margin-top: -($height / 2)
+
+@mixin center($height, $width)
+  +center_x($width)
+  +center_y($height)
+
+@mixin calc($property, $expression)
+  //@return -webkit-calc($expression)
+  #{$property}: -moz-calc(#{$expression})
+  #{$property}: -o-calc(#{$expression})
+  #{$property}: -webkit-calc(#{$expression})
+  #{$property}: calc(#{$expression})
+
+@function placeholder_pic($height, $width)
+  $src: "placehold.it/" + $height + "x" + $width
+  @return $src
+
+@mixin icon($height, $width, $src)
+  display: inline-block
+  width: $width
+  height: $height
+  +fitted_background_img(asset($src))
+  +center_y($height)
