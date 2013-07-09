@@ -1,0 +1,17 @@
+
+/Hello Modal!
+
+/.container
+/.modal.hide.fade.in{:style=>"display: none;"}
+.modal.fade.in
+	.modal-header
+		/%button.close{:type=>"button", 'data-dismiss'=>"modal", 'aria-hidden'=>"true"} &times;
+		%button.close{:type=>"button", 'data-dismiss'=>"modal"} x
+		%h3 Modal Header
+	
+	.modal-body
+		%h4 Text in a modal
+		
+	.modal-footer
+		%a.btn{:href=>"#", 'data-dismiss'=>'modal'} Close
+		%a.btn.btn-primary{:href=>"#", 'data-dismiss'=>'modal'} Save Changes

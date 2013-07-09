@@ -7,7 +7,7 @@ var server_data = {"home_feed":[{"compatibility_score":null,"status":0,"id":11,"
 var data_feed = server_data["home_feed"];
 
 /* Controllers */
-function MatchListCtrl($scope, $http) {
+function MatchListCtrl($scope, $http, $modal) {
 
 	for (var match_num = 0; match_num < data_feed.length; match_num++){
 		
@@ -17,7 +17,26 @@ function MatchListCtrl($scope, $http) {
 		console.log("generated listing: " + match_num);
 	}
 	$scope.matches = data_feed;
+	//$scope.matches = [data_feed[0]];
+	//console.log(data_feed[0]);
+	
+	//$scope.modal = {content: "Hello Modal", saved: false};
+	//$modal.hide();
+	//$scope.modal.hide();
+	
+	$scope.viaService = function(){
+		var modal = $modal({
+			template: 'partials/modal.html',
+			show: true,
+			backdrop: 'static',
+			scope: $scope
+		});
+	}
 
+}
+
+function ModalTestCtrl($scope, $modal){
+	$scope.foo = 42;
 }
 
 angular.module('myApp.controllers', []).
@@ -27,3 +46,4 @@ angular.module('myApp.controllers', []).
   .controller('MyCtrl2', [function() {
 
   }]);
+  //.controller('MatchListCtrl', [MatchListCtrl]);

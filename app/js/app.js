@@ -14,6 +14,7 @@ var myApp = angular.module('myApp',['myApp.filters', 'myApp.services', 'myApp.di
 myApp.config(function($routeProvider){
     $routeProvider.when('/matches', {templateUrl: 'partials/new_matches.html', controller: 'MatchListCtrl'});
     $routeProvider.when('/splash', {templateUrl: 'partials/splash.html', controller: 'MyCtrl2'});
+    $routeProvider.when('/modal', {templateUrl: 'partials/modal_test.html', controller: 'ModalTestCtrl'});
     //$routeProvider.when('/foo', {redirectTo: "http://google.com"});
     $routeProvider.otherwise({redirectTo: '/splash'});	
     //delete $httpProvider.defaults.headers.common['X-Requested-With'];

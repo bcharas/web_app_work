@@ -8,13 +8,20 @@
 		{{match.user2.first_name}} {{match.user2.last_name}}
 		
 .profiles_box
-	/#pro_pic_1{:style=>"background-image: url({{match.user1.fb_photo_url_large}})"}
-	/#pro_pic_2{:style=>"background-image: url({{match.user2.fb_photo_url_large}})"}
+	
 	.profile_picture.left_pic{:style=>"background-image: url({{match.user1.fb_photo_url_large}})"}
 	.profile_picture.right_pic{:style=>"background-image: url({{match.user2.fb_photo_url_large}})"}
-/%table.options{:cellpadding=>"0", :cellspacing=>"0", :height=>"110px", :width=>"600px"}
-/	%td.yes_option Yes
-/	%td.no_option No
+	
 %table.yes_no_buttons{:cellpadding=>'0', :cellspacing=>'0'}
-	%td.no_button
-	%td.yes_button
+	%td
+		.no_button{'bs-modal'=>"'partials/modal.html'"}
+		/%input.no_button
+		/%button.no_button{:type=>"button", "bs-modal"=>"'partials/modal.html'"}
+		/%button.no_button
+		/%button.no_button{:type=>"button", "ng-click"=>"viaService()"}
+	%td
+		.yes_button{'bs-modal'=>"'partials/modal.html'"}
+		/%input.yes_button
+		/%button.yes_button
+
+/%button.btn{:type=>"button", 'bs-modal'=>"'partials/modal.html'"}
