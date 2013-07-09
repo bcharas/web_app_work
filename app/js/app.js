@@ -9,7 +9,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
   }]);
 */
 //'myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers'
-var myApp = angular.module('myApp',['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers']);
+var myApp = angular.module('myApp',['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers', '$strap.directives']);
 
 myApp.config(function($routeProvider){
     $routeProvider.when('/matches', {templateUrl: 'partials/new_matches.html', controller: 'MatchListCtrl'});

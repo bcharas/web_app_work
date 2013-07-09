@@ -1,0 +1,44 @@
+
+$profiles_box_width: 620px;
+$profiles_box_background: white;
+
+$pro_pic_width: 295px;
+$pro_pic_height: 295px;
+
+$profiles_height: $pro_pic_height + 20px;
+
+.profiles_box{
+	@include box($profiles_height, $profiles_box_width,
+					$profiles_box_background, black);
+
+	margin-left: -10px;
+	
+	position: relative;
+	//z-index: 2;
+}
+
+#pro_pic_1{
+	@include box($pro_pic_height, $pro_pic_width, white, white);
+	
+	//background-repeat: no-repeat;
+	//background-image: url("../img/square-placeholder.jpg");
+	//background-size: cover;
+	$placeholder_img: "square-placeholder.jpg"
+	
+	+fitted_background_img(asset($placeholder_img))	
+	//margin-top: 5px;
+	//margin-left: 5px;
+
+	display: inline-block;
+}
+
+#pro_pic_2{
+	@include box($pro_pic_height, $pro_pic_width, white, white);
+	
+	background-repeat: no-repeat;
+	background-image: url("../img/square-placeholder.jpg");
+	background-size: cover;
+	
+	margin-top: 10px;
+	display: inline-block;
+}

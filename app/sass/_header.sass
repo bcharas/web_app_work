@@ -1,0 +1,40 @@
+@import 'base'
+
+.header
+	$header_height: 50px
+
+	position: fixed
+	width: 100%
+	height: $header_height
+	z-index: 3
+	background-color: #7787D9
+	top: 0
+
+
+
+#header_logo
+	$logo_height: 30px
+	$logo_width: 100px
+	$logo_img: "SplashLogo@2x.png"
+
+	height: $logo_height
+	width: $logo_width
+	position: relative
+	+center_x($logo_width)
+	+fitted_background_img(asset($logo_img))
+	background-size: contain
+	margin-top: 10px		
+	
+	//margin-left: auto
+	//margin-right: auto	
+	//background:
+	//	size: contain
+	//	repeat: no-repeat
+	//	image: url("../img/SplashLogo@2x.png")
+
+	//height:30px
+	//width: 100px
+	//left: 25px
+	//margin-left: -50px;
+	
+

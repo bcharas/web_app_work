@@ -1,0 +1,37 @@
+@import 'base'
+
+$profiles_box_width: 620px
+$profiles_box_background: white
+//$pro_pic_width: 295px
+//$pro_pic_height: 295px
+$pro_pic_width: 300px
+$pro_pic_height: 300px
+$profiles_height: $pro_pic_height + 20px
+
+.profiles_box
+	@include box($profiles_height, $profiles_box_width, $profiles_box_background, black)
+	//margin-left: -10px
+	+center_x($profiles_box_width)	
+	position: relative
+
+
+.profile_picture
+	$placeholder_img: "square-placeholder.jpg"
+	$margin_size: 10px
+	
+	@include box($pro_pic_height, $pro_pic_width, white, white)
+	border: 0px
+	margin-top: $margin_size
+	+fitted_background_img(asset($placeholder_img))	
+	background:
+		size: cover
+		position: center
+	+inline-block(none)
+	
+.left_pic
+	margin-left: 5px
+	margin-right: 2px
+
+.right_pic
+	margin-left: 1px
+	margin-right: 5px

@@ -1,0 +1,28 @@
+@import 'base'
+
+$buttons_table_width: 625px
+$button_width: 312px
+$button_height: 113px
+$corner_radius: 5px
+
+.yes_no_buttons
+  width: $buttons_table_width
+  height: $button_height
+  +border-bottom-radius($corner_radius)
+  +center_x($buttons_table_width)
+  text-align: left
+  border-collapse: separate
+
+.yes_button
+  $yes_button_img: 'ButtonYes@2x.png'
+  
+  width: $button_width
+  height: $button_height
+  +fitted_background_img(asset($yes_button_img))
+
+.no_button
+  $yes_button_img: 'ButtonNo@2x.png'
+  
+  width: $button_width
+  height: $button_height
+  +fitted_background_img(asset($yes_button_img))
