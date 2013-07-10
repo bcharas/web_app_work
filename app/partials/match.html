@@ -1,0 +1,26 @@
+<html lang='en'>
+  <head>
+    <link href='stylesheets/bootstrap.css' rel='stylesheet' type='text/css'>
+    <link href='stylesheets/match_styles.css' rel='stylesheet' type='text/css'>
+    <link href='stylesheets/modal.css' rel='stylesheet' type='text/css'>
+    <script src='../lib/angular/angular.js'></script>
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js'></script>
+    <!-- %script{:src=>"//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/js/bootstrap.min.js"} -->
+    <script src='//cdnjs.cloudflare.com/ajax/libs/angular-strap/0.7.4/angular-strap.min.js'></script>
+    <script src='js/data.js'></script>
+    <script src='js/controllers.js'></script>
+  </head>
+  <body ng-controller='MatchListCtrl'>
+    <div class='header'>
+      <div id='header_logo'></div>
+    </div>
+    <div class='match_page'>
+      <ul>
+        <li ng-repeat='match in matches'>
+          <div class='listing' ng-include="'partials/match_friends.html'"></div>
+        </li>
+        <!-- /LISTING PARTIALS -->
+      </ul>
+    </div>
+  </body>
+</html>

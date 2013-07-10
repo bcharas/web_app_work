@@ -12,7 +12,7 @@ angular.module('myApp', ['myApp.filters', 'myApp.services', 'myApp.directives', 
 var myApp = angular.module('myApp',['myApp.filters', 'myApp.services', 'myApp.directives', 'myApp.controllers', '$strap.directives']);
 
 myApp.config(function($routeProvider){
-    $routeProvider.when('/matches', {templateUrl: 'partials/new_matches.html', controller: 'MatchListCtrl'});
+    $routeProvider.when('/matches', {templateUrl: 'partials/matches.html', controller: 'MatchListCtrl'});
     $routeProvider.when('/splash', {templateUrl: 'partials/splash.html', controller: 'MyCtrl2'});
     $routeProvider.when('/modal', {templateUrl: 'partials/modal_test.html', controller: 'ModalTestCtrl'});
     //$routeProvider.when('/foo', {redirectTo: "http://google.com"});

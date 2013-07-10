@@ -15,14 +15,21 @@ $corner_radius: 5px
 
 .yes_button
   $yes_button_img: 'ButtonYes@2x.png'
+  $yes_button_img_active: 'ButtonYes_Active@2x.png'
   
   width: $button_width
   height: $button_height
   +fitted_background_img(asset($yes_button_img))
+  &:active
+    //+fitted_background_img(asset($yes_button_img_active))
+    background-image: url(asset($yes_button_img_active))
 
 .no_button
-  $yes_button_img: 'ButtonNo@2x.png'
+  $no_button_img: 'ButtonNo@2x.png'
+  $no_button_img_active: 'ButtonNo_Active@2x.png'
   
   width: $button_width
   height: $button_height
-  +fitted_background_img(asset($yes_button_img))
+  +fitted_background_img(asset($no_button_img))
+  &:active
+    background-image: url(asset($no_button_img_active))

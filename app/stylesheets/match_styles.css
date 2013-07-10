@@ -167,12 +167,20 @@ ul {
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
-
 /* line 23, ../sass/_yes_no_buttons.sass */
+.yes_button:active {
+  background-image: url("../img/ButtonYes_Active@2x.png");
+}
+
+/* line 27, ../sass/_yes_no_buttons.sass */
 .no_button {
   width: 312px;
   height: 113px;
   background-image: url("../img/ButtonNo@2x.png");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+/* line 34, ../sass/_yes_no_buttons.sass */
+.no_button:active {
+  background-image: url("../img/ButtonNo_Active@2x.png");
 }
