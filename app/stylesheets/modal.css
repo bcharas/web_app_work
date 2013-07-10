@@ -4,3 +4,23 @@
   margin-left: -300px;
   top: 50%;
 }
+
+/* line 13, ../sass/modal.sass */
+.modal-header {
+  height: 20px;
+}
+
+/* line 16, ../sass/modal.sass */
+.modal-body {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 100%;
+  .profile_picture-padding: 0;
+  .profile_picture-display: inline-block;
+}
+
+/* line 24, ../sass/modal.sass */
+h4 {
+  text-align: center;
+}

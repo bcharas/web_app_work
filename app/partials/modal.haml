@@ -7,10 +7,13 @@
 	.modal-header
 		/%button.close{:type=>"button", 'data-dismiss'=>"modal", 'aria-hidden'=>"true"} &times;
 		%button.close{:type=>"button", 'data-dismiss'=>"modal"} x
-		%h3 Modal Header
+		//%h3 Modal Header
 	
 	.modal-body
-		%h4 Text in a modal
+		//%h4 Text in a modal
+		.profile_picture.left_pic{:style=>"background-image: url({{match.user1.fb_photo_url_large}})"}
+		.profile_picture.right_pic{:style=>"background-image: url({{match.user2.fb_photo_url_large}})"}
+		%h4 Hello World!
 		
 	.modal-footer
 		%a.btn{:href=>"#", 'data-dismiss'=>'modal'} Close
