@@ -39,6 +39,12 @@ function ModalTestCtrl($scope, $modal){
 	$scope.foo = 42;
 }
 
+function MatchResponseCtrl($scope){
+	var response_options = ["Just wouldn't work out", "In a relationship", "Plays for the other team", "Other"];
+	$scope.options = response_options;
+}
+
+
 angular.module('myApp.controllers', []).
   controller('MyCtrl1', [function() {
 

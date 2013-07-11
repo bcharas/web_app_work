@@ -1,0 +1,65 @@
+/* line 16, ../sass/_base.sass */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* line 3, ../sass/match_friend_response_options.sass */
+.options_box {
+  width: 620px;
+  margin-right: 25px;
+}
+
+/* line 8, ../sass/match_friend_response_options.sass */
+.response_option {
+  width: 620px;
+  margin-right: 15px;
+  height: 75px;
+  text-align: center;
+}
+
+/* line 18, ../sass/match_friend_response_options.sass */
+.select_option {
+  height: 55px;
+  width: 55px;
+  background-image: url("../img/NotMatchUnchecked.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  margin: 10px 0px 10px 0px;
+}
+/* line 33, ../sass/match_friend_response_options.sass */
+.select_option:active {
+  background-image: url("../img/NotMatchChecked.png");
+}
+
+/* line 36, ../sass/match_friend_response_options.sass */
+.option_1 {
+  position: absolute;
+  left: 95px;
+  margin: 10px 0px 10px 0px;
+}
+
+/* line 46, ../sass/match_friend_response_options.sass */
+.option_2 {
+  position: absolute;
+  margin: 10px 0px 10px 0px;
+  left: 500px;
+}
+
+/* line 56, ../sass/match_friend_response_options.sass */
+.option_text {
+  text-align: center;
+  display: -moz-inline-stack;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  zoom: 1;
+  *display: inline;
+  position: relative;
+  top: 25px;
+}

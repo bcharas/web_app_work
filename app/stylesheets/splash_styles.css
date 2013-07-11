@@ -1,3 +1,13 @@
+/* line 16, ../sass/_base.sass */
+* {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: moz-none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 /* line 3, ../sass/splash_styles.sass */
 html, body, .view_box, .splash_page {
   margin: 0;

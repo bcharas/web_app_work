@@ -11,7 +11,12 @@
     <!-- /%h4 Text in a modal -->
     <div class='profile_picture left_pic' style='background-image: url({{match.user1.fb_photo_url_large}})'></div>
     <div class='profile_picture right_pic' style='background-image: url({{match.user2.fb_photo_url_large}})'></div>
-    <h4>Hello World!</h4>
+    <!-- %h4 Hello World! -->
+    <div class='container options_box' ng-controller='MatchResponseCtrl'>
+      <div class='container options_box' ng-repeat='option in options'>
+        <div class='options_box' ng-include="'partials/match_friend_response_option.html'"></div>
+      </div>
+    </div>
   </div>
   <div class='modal-footer'>
     <a class='btn' data-dismiss='modal' href='#'>Close</a>
